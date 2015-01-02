@@ -364,7 +364,7 @@ class DbHelper extends SQLiteOpenHelper {
         Question q145 = new Question("MTIs will provide trainees a mandatory __ hour Initial Base Liberty.", "2", "3", "4", "5", "2", "Para. 4.17.1");//A
         this.addQuestion(q145);
         //Chapter 5
-        /*Question q146 = new Question("(M16 Trainer Weapons) Each squadron will conduct an accountability check NET 1600 and BLT 2000; who is responsible for reporting their accountability to the CQ?", "Entry Controller", "Weapons Monitor", "Dorm Chief", "Flight Instructor", "Flight Instructor", "Para. 5.2.4.1");//D
+        Question q146 = new Question("(M16 Trainer Weapons) Each squadron will conduct an accountability check NET 1600 and BLT 2000; who is responsible for reporting their accountability to the CQ?", "Entry Controller", "Weapons Monitor", "Dorm Chief", "Flight Instructor", "Flight Instructor", "Para. 5.2.4.1");//D
         this.addQuestion(q146);
         Question q147 = new Question("(RH&T M16 Daily Storage) When stored in the carrying case under the bed, which of the following is NOT the approved method of display?", "Muzzle of the rifle is towards the center isle", "Muzzle of the rifle is towards the wall locker", "Carrying handle will be towards the non-inspection side", "pistol grip towards the non-inspection side", "Muzzle of the rifle is towards the center isle", "Para. 5.2.5.2.1");//A
         this.addQuestion(q147);
@@ -393,7 +393,7 @@ class DbHelper extends SQLiteOpenHelper {
         Question q159 = new Question("Who is responsible for conducting nightly accountability check for all personnel and M-16 trainer weapons while at BEAST?", "Weapons Monitor", "BEAST Monitor", "Element Leader", "Dorm Chief", "Dorm Chief", "Para. 5.6.4");//D
         this.addQuestion(q159);
         //Chapter 6
-        Question q160 = new Question("The FIRST time a trainee fails the EOC, who is responsible for documenting the "U" grade on the BMT Form 105?", "I.S.", "Flight MTI", "Not required", "WSMS", "WSMS", "Para. 6.3.1");//D
+        Question q160 = new Question("The FIRST time a trainee fails the EOC, who is responsible for documenting the 'U' grade on the BMT Form 105?", "I.S.", "Flight MTI", "Not required", "WSMS", "WSMS", "Para. 6.3.1");//D
         this.addQuestion(q160);
         Question q161 = new Question("The SECOND time a trainee fails the EOC, they may be allowed to test a Third time if approved by _________.", "Flight Commander", "Instructor Supervisor", "Squadron Superintendent", "Director of Operations", "Director of Operations", "Para. 6.3.2");//D
         this.addQuestion(q161);
@@ -403,20 +403,135 @@ class DbHelper extends SQLiteOpenHelper {
         this.addQuestion(q163);
         Question q164 = new Question("If a trainee fails a third evaluation on a PC, who provides the SQ/CC with a recommendation for recycle/separation?", "MTI", "F.C.", "I.S.", "D.O.", "D.O.", "Para. 6.5.2.4.1");//D
         this.addQuestion(q164);
-        Question q165 = new Question("", "", "", "", "", "", "Para. ");//D
+        Question q165 = new Question("If a trainee fails a MOS inspection, where should it be documented?", "BMT 205", "BMT128A", "BMT105A", "Both B and C", "Both B and C", "Para. 6.4.3.");//D
         this.addQuestion(q165);
-        Question q166 = new Question("", "", "", "", "", "", "Para. ");//D
+        Question q166 = new Question("Which of the following is NOT a BMT graduation Requirement?", "Attend LOAC", "Attend CoC", "Attend FEST", "HF/WF Control", "HF/WF Control", "Table. 6.2");//D
         this.addQuestion(q166);
-        Question q167 = new Question("", "", "", "", "", "", "Para. ");//D
+        Question q167 = new Question("Who is the designated waiver authority for BEAST?", "737 TRG CC or CD", "737 TRG CCV", "737 TRG CCC", "737 TRG CCF", "737 TRG CC or CD", "Para. 6.6.1");//A
         this.addQuestion(q167);
-        Question q168 = new Question("", "", "", "", "", "", "Para. ");//D
+        Question q168 = new Question("Trainees who are shadowing a 7 WOT flight while their flight is at BEAST will wear what uniform?", "7WOT UOD", "ABU's only", "Whatever the flight is wearing", "Blues only", "ABU's only", "Para. 6.6.1 Exception");//B
         this.addQuestion(q168);
-        Question q169 = new Question("", "", "", "", "", "", "Para. ");//D
+        //Chapter 7
+        Question q169 = new Question("What is the correct filing order for flight records?", "Active, Reserve, Guard", "Active, Guard, Reserve", "Reserve, Active, Guard", "Guard, Active, Reserve", "Active, Reserve, Guard", "Para. 7.1.2");//A
         this.addQuestion(q169);
-        Question q170 = new Question("", "", "", "", "", "", "Para. ");//D
+        Question q170 = new Question("Before a trainee is tranferred out of the squadron, who must review all paperwork?", "Both C and D", "Squadron Commander", "Director of Operations", "Squadron Superintendent", "Both C and D", "Para. 7.2.1");//A
         this.addQuestion(q170);
-        Question q171 = new Question("", "", "", "", "", "", "Para. ");//D
-        this.addQuestion(q171);*/
+        Question q171 = new Question("If a trainee is admitted to the hospital, when must the trainees records be turned into supervisory personnel during the next duty day?", "0800", "1000", "1200", "1400", "0800", "Para. 7.2.2");//A
+        this.addQuestion(q171);
+        Question q172 = new Question("If a trainee is transferred to MEDHOLD in BTMS, but the trainee is not physically reporting to MEDHOLD that day, when must their records be dropped off at MEDHOLD?", "1200", "1400", "1700", "1900", "1700", "Para. 7.2.4");//C
+        this.addQuestion(q172);
+        Question q173 = new Question("When a trainee is awarded an Unsatisfactory Core Value Rating, whatelse must accompany it?", "Referral to the I.S.", "A comment in BTMS", "A Reval within 24 hours", "RLA Evaluation", "A comment in BTMS", "Para. 7.3.2.2");//D
+        this.addQuestion(q173);
+        Question q174 = new Question("Where is the Initial PT and Final PT BMT Information located?", "AFI 36-2905", "737TRGOI 36-2905", "737TRG 36-3", "737TRG 36-2", "737TRGOI 36-2905", "Para. 7.3.3.1");//B
+        this.addQuestion(q174);
+        Question q175 = new Question("Evaluations must be entered into BTMS NLT ________.", "End of the same duty day", "12 Hours from Eval", "24 Hours from Eval", "The end of the next duty day", "The end of the next duty day", "Para. ");//D
+        this.addQuestion(q175);
+        Question q176 = new Question("Re-evaluation must be conducted within _ training days of initial evaluation.", "1", "2", "3", "4", "2", "Para. 7.3.4.1.2");//B
+        this.addQuestion(q176);
+        Question q177 = new Question("If a trainee fails a re-evaluation, who should the trainee be referred to?", "Team Chief", "I.S./F.C.", "DO", "CC", "I.S./F.C.", "Para. 7.3.4.1.2");//D
+        this.addQuestion(q177);
+        Question q178 = new Question("Student leaders must be appointed NLT __________.", "Start of 2 WOT", "End of 2 WOT", "End of 1 WOT", "Start of 3 WOT", "End of 2 WOT", "Para. 7.3.5.1");//B
+        this.addQuestion(q178);
+        Question q179 = new Question("How many key positions can a trainee be assigned to at one time?", "1", "2", "3", "4", "1", "Para. 7.3.5.2");//A
+        this.addQuestion(q179);
+        Question q180 = new Question("Which type of waiver is NOT required to be entered into BTMS Waiver section?", "Shaving", "Drill", "PT", "Prolonged Standing", "Shaving", "Para. 7.3.7.1");//A
+        this.addQuestion(q180);
+        Question q181 = new Question("To be effective, counseling must be specific, constructive and timely (typically within ______ hours).", "12", "24", "48", "36", "48", "Para. 7.4.4.2");//C
+        this.addQuestion(q181);
+        Question q182 = new Question("Which of the following are the correct 4 parts to a required comment:", "Deficiency, Reason for Deficiency, Response, Disposition", "Deficiency, Response from trainee, Resolution, Disposition", "UCMJ relation, Reason for Deficiency, Resolution, Disposition", "Deficiency, Reason for Deficiency, Resolution, Disposition", "Deficiency, Reason for Deficiency, Resolution, Disposition", "Para. ");//D
+        this.addQuestion(q182);
+        Question q183 = new Question("If referred to supervisory personnel, trainees should be counseled NLT ________.", "2 hours from incident", "week of training", "2 duty days", "the next duty day", "the next duty day", "Para. 7.4.6.");//D
+        this.addQuestion(q183);
+        Question q184 = new Question("Shipping records must be filed within _ days of shipping.", "1", "2", "3", "4", "3", "Para. 7.6.3");//C
+        this.addQuestion(q184);
+        //Chapter 8
+        Question q185 = new Question("100% of trainees must accomplish Mandatory Drug Testing within __ hours of initial arrival to BMT.", "24", "48", "72", "96", "72", "Para. 8.1");//C
+        this.addQuestion(q185);
+        Question q186 = new Question("MTI will wear _______ when taking a flight to Drug Testing.", "Duty Uniform", "MTI PT Gear", "Blues", "AF PT Gear", "", "Para. 8.1.2");//A
+        this.addQuestion(q186);
+        Question q187 = new Question("What two items must a trainee have with them prior to being allowed to provide a urine sample for drug testing?", "A picture and SSN card only", "Only a SSN card is required", "Photo ID and SSN proof", "Photo ID and Bank Info", "Photo ID and SSN proof", "Para. 8.1.3.1");//C
+        this.addQuestion(q187);
+        Question q188 = new Question("If a trainee does not have a Photo or SSN proof they should be sent to _______", "737TRSS Processing Flight", "MED/DENTAL", "Career Guidance", "Orders Pickup", "737TRSS Processing Flight", "Para. 8.1.3.2");//A
+        this.addQuestion(q188);
+        Question q189 = new Question("Trainees unable to provide a sample on Wednesday evening should report back to the testing site on Thursday at ___________.", "1730", "2030", "1930", "1830", "1830", "Para. 8.1.5.");//D
+        this.addQuestion(q189);
+        Question q190 = new Question("Trainees unable to provide a sample on Thursday evening should report back to the testing site on Friday at _____________.", "1300", "1400", "1500", "1600", "1300", "Para. 8.1.6");//A
+        this.addQuestion(q190);
+        Question q191 = new Question("Trainees unable to provide a sample on Friday evening should report back to the testing site on Monday at ___________.", "0600", "0700", "0800", "0900", "0800", "Para. 8.1.7");//C
+        this.addQuestion(q191);
+        Question q192 = new Question("Trainees that are seen at the UCC or SAMMC must see a provider at REID Clinic NLT __________.", "First duty day after returning", "Within 2 duty days", "Only if needed", "When (if) waiver expires", "First duty day after returning", "Para. 8.2.2");//A
+        this.addQuestion(q192);
+        Question q193 = new Question("Which of the following symptoms constitutes an Emergency Health Care Situation: ", "Stomach Pain", "Vomiting", "Diarrhea", "Very Confused", "Very Confused", "Table 8.1");//D
+        this.addQuestion(q193);
+        Question q194 = new Question("(Fever Flight) Ill trainees may eat in the dining facility during normal hours, but must sit at least _ feet from non-ill trainees.", "1", "2", "3", "4", "3", "Para. 8.7.4");//C
+        this.addQuestion(q194);
+        Question q195 = new Question("If an MTI identifies a trainee as having a potential mental/behavioral problem, what is required on White Bond paper when the trainee is sent to a medical facility?", "BMT105A", "4 AFQT scores and a statement", "Witness statements", "AFSC", "4 AFQT scores and a statement", "Para. 8.8.2");//B
+        this.addQuestion(q195);
+        Question q196 = new Question("If a trainee requests a mental health evaluation, what is NOT required?", "Boxer Rights", "2 Escorts", "I.S. Counseling", "Supporting Documention", "Boxer Rights", "Para. 8.8.1.3");//D
+        this.addQuestion(q196);
+        Question q197 = new Question("Which medication may trainees continue to consume that was issued from a civilian provider prior to them arriving at BMT?", "Any Medication", "Dietary Supplements", "Pain Killers", "Birth Control", "Birth Control", "Para. 8.10.1");//D
+        this.addQuestion(q197);
+        //Chapter 9
+        Question q198 = new Question("Who is the approval authority for recycle actions longer than 2 weeks?", "737TRG/CC", "TRS/CC", "737TRG/CCF", "TRS/CCF", "737TRG/CC", "Para. 9.1.3");//B
+        this.addQuestion(q198);
+        Question q199 = new Question("Trainees recycled out of squadron must out-process the losing squadron by ______ and in-process the gaining squadron by _________.", "1300 / 1700", "1500 / 1800", "0900 / 1300", "1000 / 1200", "1300 / 1700", "Para. 9.1.6.2");//A
+        this.addQuestion(q199);
+        Question q200 = new Question("Trainees admitted to the hospital for medical reasons (non-mental health), a 3-day bag is delivered within _______ hours.", "12", "24", "26", "48", "24", "Para. 9.2.1");//B
+        this.addQuestion(q200);
+        Question q201 = new Question("If a trainee is admitted for longer than ___ hours, their property must be inventoried and kept in PT/Supply.", "24", "48", "72", "96", "72", "Para. 9.2.1");//C
+        this.addQuestion(q201);
+        Question q202 = new Question("Trainees granted convalescence leave must depart on leave and return from leave to which squadron?", "Assigned Squadron", "737TRSS", "Old Flight Squadron", "New Flight Squadron", "737TRSS", "Para. 9.3.1.1.");//B
+        this.addQuestion(q202);
+        Question q203 = new Question("", "", "", "", "", "", "Para. ");//D
+        this.addQuestion(q203);
+        Question q204 = new Question("", "", "", "", "", "", "Para. ");//D
+        this.addQuestion(q204);
+        Question q205 = new Question("", "", "", "", "", "", "Para. ");//D
+        this.addQuestion(q205);
+        Question q206 = new Question("", "", "", "", "", "", "Para. ");//D
+        this.addQuestion(q206);
+        Question q207 = new Question("", "", "", "", "", "", "Para. ");//D
+        this.addQuestion(q207);
+        Question q208 = new Question("", "", "", "", "", "", "Para. ");//D
+        this.addQuestion(q208);
+        Question q209 = new Question("", "", "", "", "", "", "Para. ");//D
+        this.addQuestion(q209);
+        Question q210 = new Question("", "", "", "", "", "", "Para. ");//D
+        this.addQuestion(q210);
+        Question q211 = new Question("", "", "", "", "", "", "Para. ");//D
+        this.addQuestion(q211);
+        Question q212 = new Question("", "", "", "", "", "", "Para. ");//D
+        this.addQuestion(q212);
+        Question q213 = new Question("", "", "", "", "", "", "Para. ");//D
+        this.addQuestion(q213);
+        Question q214 = new Question("", "", "", "", "", "", "Para. ");//D
+        this.addQuestion(q214);
+        Question q215 = new Question("", "", "", "", "", "", "Para. ");//D
+        this.addQuestion(q215);
+        Question q216 = new Question("", "", "", "", "", "", "Para. ");//D
+        this.addQuestion(q216);
+        Question q217 = new Question("", "", "", "", "", "", "Para. ");//D
+        this.addQuestion(q217);
+        Question q218 = new Question("", "", "", "", "", "", "Para. ");//D
+        this.addQuestion(q218);
+        Question q219 = new Question("", "", "", "", "", "", "Para. ");//D
+        this.addQuestion(q219);
+        Question q220 = new Question("", "", "", "", "", "", "Para. ");//D
+        this.addQuestion(q220);
+        Question q221 = new Question("", "", "", "", "", "", "Para. ");//D
+        this.addQuestion(q221);
+        Question q222 = new Question("", "", "", "", "", "", "Para. ");//D
+        this.addQuestion(q222);
+        Question q223 = new Question("", "", "", "", "", "", "Para. ");//D
+        this.addQuestion(q223);
+        Question q224 = new Question("", "", "", "", "", "", "Para. ");//D
+        this.addQuestion(q224);
+        Question q225 = new Question("", "", "", "", "", "", "Para. ");//D
+        this.addQuestion(q225);
+        Question q226 = new Question("", "", "", "", "", "", "Para. ");//D
+        this.addQuestion(q226);
+        Question q227 = new Question("", "", "", "", "", "", "Para. ");//D
+        this.addQuestion(q227);
     }
 
     /**
