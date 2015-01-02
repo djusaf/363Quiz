@@ -484,9 +484,9 @@ class DbHelper extends SQLiteOpenHelper {
         this.addQuestion(q202);
         Question q203 = new Question("", "", "", "", "", "", "Para. ");//D
         this.addQuestion(q203);
-        Question q204 = new Question("", "", "", "", "", "", "Para. ");//D
+        Question q204 = new Question("", "", "", "", "", "", "Para. ");//A
         this.addQuestion(q204);
-        Question q205 = new Question("", "", "", "", "", "", "Para. ");//D
+        Question q205 = new Question("", "", "", "", "", "", "Para. ");//B
         this.addQuestion(q205);
         Question q206 = new Question("", "", "", "", "", "", "Para. ");//D
         this.addQuestion(q206);
