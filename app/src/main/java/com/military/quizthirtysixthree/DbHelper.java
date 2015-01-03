@@ -482,47 +482,50 @@ class DbHelper extends SQLiteOpenHelper {
         this.addQuestion(q201);
         Question q202 = new Question("Trainees granted convalescence leave must depart on leave and return from leave to which squadron?", "Assigned Squadron", "737TRSS", "Old Flight Squadron", "New Flight Squadron", "737TRSS", "Para. 9.3.1.1.");//B
         this.addQuestion(q202);
-        Question q203 = new Question("", "", "", "", "", "", "Para. ");//D
+        Question q203 = new Question("Ensure that trainees receive one set of _______ to wear when traveling on leave.", "Civilian clothes", "ABU's", "PT Gear", "blues", "blues", "Para. 9.3.1.4");//D
         this.addQuestion(q203);
-        Question q204 = new Question("", "", "", "", "", "", "Para. ");//A
+        Question q204 = new Question("Who is responsible for providing an area to store and protect trainee clothing and personal items, when they are absent (on leave) from the squadron?  ", "CC", "PT/Supply", "MTI", "IS", "CC", "Para. 9.3.1.5 NOTE");//A
         this.addQuestion(q204);
-        Question q205 = new Question("", "", "", "", "", "", "Para. ");//B
+        Question q205 = new Question("If a trainee is determined to be AWOL, when must their property be inventoried and secured?", "2 days", "3 days", "Same day", "Next duty day", "Next duty day", "Para. 9.4.1");//D
         this.addQuestion(q205);
-        Question q206 = new Question("", "", "", "", "", "", "Para. ");//D
+        Question q206 = new Question("After how many days is a trainees belongings considered abandoned and must be turned in? (AWOL Trainee)", "90 days", "120 days", "150 days", "180 days", "120 days", "Para. 9.4.3");//D
         this.addQuestion(q206);
-        Question q207 = new Question("", "", "", "", "", "", "Para. ");//D
+        Question q207 = new Question("Which of the following are NOT grounds for entry-level discharge:", "Difficulty adapting to military life", "Pregnancy", "Disciplinary Infractions", "Lacking self-discipline or respect for authority", "Difficulty adapting to military life", "Para. 9.5.1");//A
         this.addQuestion(q207);
-        Question q208 = new Question("", "", "", "", "", "", "Para. ");//D
+        Question q208 = new Question("What is the maximum holding time for a trainee in th 802 SFS holding cell?", "1 hour", "2 hours", "3 hours", "4 hours", "3 hours", "Para. 9.6.5");//C
         this.addQuestion(q208);
-        Question q209 = new Question("", "", "", "", "", "", "Para. ");//D
+        Question q209 = new Question("If a trainee purchases electronics during Graduation Weekend, what should they do with them?", "Ship them to their Technical Training Base", "Bring them to the Dorm", "Bring them to CQ", "Ship them home", "Ship them to their Technical Training Base", "Para. 9.12.3");//A
         this.addQuestion(q209);
-        Question q210 = new Question("", "", "", "", "", "", "Para. ");//D
+        //Chapter 10
+        Question q210 = new Question("(737TRSS) Which armband color represents Separations Flight?", "Red", "Green", "Blue", "Orange", "Orange", "Para. 10.2.3.1");//D
         this.addQuestion(q210);
-        Question q211 = new Question("", "", "", "", "", "", "Para. ");//D
+        Question q211 = new Question("(737TRSS) Which armband color represents Medical Hold Flight?", "Red", "Green", "Blue", "Orange", "Blue", "Para. 10.2.3.2");//C
         this.addQuestion(q211);
-        Question q212 = new Question("", "", "", "", "", "", "Para. ");//D
+        Question q212 = new Question("(737TRSS) Which armband color represents Get Fit Flight?", "Red", "Green", "Blue", "Orange", "Green", "Para. 10.2.3.3");//B
         this.addQuestion(q212);
-        Question q213 = new Question("", "", "", "", "", "", "Para. ");//D
+        Question q213 = new Question("How often are trainees assigned to the Get Fit Program evaluated IAW PT Progress Check?", "Daily", "Bi-Weekly", "Weekly", "Every 48 Hours", "Weekly", "Para. 10.3.1");//C
         this.addQuestion(q213);
-        Question q214 = new Question("", "", "", "", "", "", "Para. ");//D
+        Question q214 = new Question("Trainees not meeting fitness standards after __ days in the Get Fit program may be considered for discharge.", "30", "60", "90", "120", "30", "Para. 10.3.6");//A
         this.addQuestion(q214);
-        Question q215 = new Question("", "", "", "", "", "", "Para. ");//D
+        //Chapter 11
+        Question q215 = new Question("If the risk outweighs the benefit, MTI's should use the groups ________ policy.", "Stop It", "Knock It Off", "Get Help", "Re-Think It", "Knock It Off", "Para. 11.1.2.3");//B
         this.addQuestion(q215);
-        Question q216 = new Question("", "", "", "", "", "", "Para. ");//D
+        Question q216 = new Question("What should an MTI do during a Thunderstorm Watch?", "No actions required", "Be prepared to seek the nearest shelter", "Shelter In Place Immediately", "Transit Flight without Guidon", "Be prepared to seek the nearest shelter", "Para. 11.3.3.1");//B
         this.addQuestion(q216);
-        Question q217 = new Question("", "", "", "", "", "", "Para. ");//D
+        Question q217 = new Question("What should an MTI do during Lightning Within 5 Miles?", "Secure Guidon and M16 trainer weapons", "Transit Normally", "Shelter In Place", "Double Time to squadron", "Secure Guidon and M16 trainer weapons", "Para. 11.3.4.1");//A
         this.addQuestion(q217);
-        Question q218 = new Question("", "", "", "", "", "", "Para. ");//D
+        Question q218 = new Question("Hyponatremia (water intoxication) can be caused by ingestion of large amounts of water (greater than __ canteens per hour).", "1.5", "2.5", "2", "1", "1.5", "Para. 11.6.1");//A
         this.addQuestion(q218);
-        Question q219 = new Question("", "", "", "", "", "", "Para. ");//D
+        //Chapter 12
+        Question q219 = new Question("Trainees may only miss class for __________ appointments.", "medical", "processing", "Both A and B", "Neither A and B", "Both A and B", "Para. 12.1.1");//D
         this.addQuestion(q219);
-        Question q220 = new Question("", "", "", "", "", "", "Para. ");//D
+        Question q220 = new Question("Which of the following is an example of a military training that may take priority over religious activities.", "Drill Practice", "Dormitory Details", "KP Detail", "BEAST Packing", "KP Detail", "Para. 12.2.1.2");//C
         this.addQuestion(q220);
-        Question q221 = new Question("", "", "", "", "", "", "Para. ");//D
+        Question q221 = new Question("Appoint chapel guides NLT the _________ briefing.", "Chapel Orientation", "First Week", "BMT Arrival", "Entry Controller", "Chapel Orientation", "Para. 12.2.2.2");//A
         this.addQuestion(q221);
-        Question q222 = new Question("", "", "", "", "", "", "Para. ");//D
+        Question q222 = new Question("Chapel guides must be at the chapel NLT _____ on Sundays.", "0730", "0800", "0700", "0630", "0630", "Para. 12.2.2.6");//D
         this.addQuestion(q222);
-        Question q223 = new Question("", "", "", "", "", "", "Para. ");//D
+        /*Question q223 = new Question("", "", "", "", "", "", "Para. ");//D
         this.addQuestion(q223);
         Question q224 = new Question("", "", "", "", "", "", "Para. ");//D
         this.addQuestion(q224);
@@ -532,6 +535,7 @@ class DbHelper extends SQLiteOpenHelper {
         this.addQuestion(q226);
         Question q227 = new Question("", "", "", "", "", "", "Para. ");//D
         this.addQuestion(q227);
+        */
     }
 
     /**
