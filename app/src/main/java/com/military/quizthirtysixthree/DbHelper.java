@@ -32,7 +32,7 @@ class DbHelper extends SQLiteOpenHelper {
 	// --Commented out by Inspection (12/3/2014 3:59 PM):Question currentQ;
 	// --Commented out by Inspection (12/3/2014 4:00 PM):int qid=0;
 	
-	private static final int DATABASE_VERSION = 14; //Update number to call onUpgrade method
+	private static final int DATABASE_VERSION = 15; //Update number to call onUpgrade method
 	// Database Name
 	private static final String DATABASE_NAME = "thirtysixthree";
 	// tasks table name
