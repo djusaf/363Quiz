@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <TextView android:id="@+id/tv_string_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/choice"
+        android:textSize="25sp"
+        android:paddingBottom="5dp" />
+
+    <Button android:id="@+id/btn_random_exam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/random"
+        android:paddingBottom="5dp" />
+
+    <Button android:id="@+id/btn_chapter_one_exam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/chapter1"
+        android:paddingBottom="5dp" />
+
+    <Button android:id="@+id/btn_chapter_two_exam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/chapter2"
+        android:paddingBottom="5dp" />
+
+    <Button android:id="@+id/btn_chapter_three_exam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/chapter3"
+        android:paddingBottom="5dp" />
+
+    <Button android:id="@+id/btn_chapter_four_exam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/chapter4"
+        android:paddingBottom="5dp" />
+
+    <Button android:id="@+id/btn_chapter_five_exam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/chapter5"
+        android:paddingBottom="5dp" />
+
+    <Button android:id="@+id/btn_chapter_six_exam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/chapter6"
+        android:paddingBottom="5dp" />
+
+    <Button android:id="@+id/btn_chapter_seven_exam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/chapter7"
+        android:paddingBottom="5dp" />
+
+        <Button android:id="@+id/btn_chapter_eight_exam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/chapter8"
+            android:paddingBottom="5dp" />
+
+        <Button android:id="@+id/btn_chapter_nine_exam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/chapter9"
+            android:paddingBottom="5dp" />
+
+        <Button android:id="@+id/btn_chapter_ten_exam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/chapter10"
+            android:paddingBottom="5dp" />
+
+        <Button android:id="@+id/btn_chapter_eleven_exam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/chapter11"
+            android:paddingBottom="5dp" />
+    </LinearLayout>
+</ScrollView>

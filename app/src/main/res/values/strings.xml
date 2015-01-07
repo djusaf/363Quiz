@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
 
-    <string name="app_name">36 &#8211; 3 Study Exam</string>
+    <string name="app_name">36 – 3 Study Exam</string>
     <string name="menu_settings">Settings</string>
     <string name="str_next">Next</string>
     <string name="title_activity_result">Results</string>
@@ -18,7 +18,23 @@
     <string name="splash_screen_image_description">Android Icon Loader Image</string>
     <string name="title_activity_splash_screen" tools:ignore="UnusedResources">SplashScreen</string>
     <string name="action_settings">Settings</string>
-    <string name="splash_screen2">The practice exam consists of 20 questions randomly generated from a pool over 500 questions on regulation 36–3.  Each test is different and a score is displayed at the end of each exam.</string>
+    <string name="splash_screen2">The practice exam consists of 20 questions randomly generated from a pool over 300 questions on regulation 36–3.</string>
     <string name="splash_screen_footer">This app is not endorsed by the USAF, BMT, or the 737TRG.  It is independently developed and maintained by a third party.</string>
-    <string name="menu_bug_report">Bug Report</string>
+    <string name="menu_bug_report">Bug Report</string>>
+    <string name="title_activity_quiz__choice">Quiz_Choice</string>
+    <string name="choice">Choose which exam you would like to take</string>
+    <string name="startExam">Choose Exam</string>
+    <string name="questionNumber">Question Number</string>
+    <string name="random">Random 20 Questions</string>
+    <string name="chapter1">Chapter1</string>
+    <string name="chapter2">Chapter2</string>
+    <string name="chapter3">Chapter3</string>
+    <string name="chapter4">Chapter4</string>
+    <string name="chapter5">Chapter5</string>
+    <string name="chapter6">Chapter6</string>
+    <string name="chapter7">Chapter7</string>
+    <string name="chapter8">Chapter8</string>
+    <string name="chapter9">Chapter9</string>
+    <string name="chapter10">Chapter10</string>
+    <string name="chapter11">Chapter11</string>
 </resources>

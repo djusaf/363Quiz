@@ -1,21 +1,26 @@
 package com.military.quizthirtysixthree;
 
 import android.app.Activity;
+
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Handler;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.RadioButton;
-import android.widget.RadioGroup;
+
+import com.google.android.gms.analytics.GoogleAnalytics;
+import com.google.android.gms.analytics.Tracker;
+
+import java.util.HashMap;
+
 
 public class SplashScreen extends Activity {
 
     @Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+
 		setContentView(R.layout.splash_screen);
         Button btnStart = (Button) findViewById(R.id.button);
 
@@ -23,26 +28,47 @@ public class SplashScreen extends Activity {
             @Override
             public void onClick(View v) {
                 startQuiz();
-
             }
         });
-        /* New Handler to start the Menu-Activity 
-         * and close this Splash-Screen after some seconds.*/
-        int SPLASH_DISPLAY_LENGTH = 5000;
-/*        new Handler().postDelayed(new Runnable(){
-            @Override
-            public void run() {
-                *//* Create an Intent that will start the Menu-Activity. *//*
-                Intent mainIntent = new Intent(SplashScreen.this,MainActivity.class);
-                SplashScreen.this.startActivity(mainIntent);
-                SplashScreen.this.finish();
-            }
-        }, SPLASH_DISPLAY_LENGTH);*/
 	}
+    // The following line should be changed to include the correct property id.
+    private static final String PROPERTY_ID = "UA-58183323-1";
 
-    public void startQuiz(){
+    public enum TrackerName {
+        APP_TRACKER, // Tracker used only in this app.
+    }
 
-        Intent mainIntent = new Intent(SplashScreen.this, MainActivity.class);
+    private final HashMap<TrackerName, Tracker> mTrackers = new HashMap<TrackerName, Tracker>();
+
+    synchronized Tracker getTracker() {
+        if (!mTrackers.containsKey(TrackerName.APP_TRACKER)) {
+
+            GoogleAnalytics analytics = GoogleAnalytics.getInstance(this);
+            Tracker t = analytics.newTracker(R.xml.app_tracker);
+            mTrackers.put(TrackerName.APP_TRACKER, t);
+
+        }
+        return mTrackers.get(TrackerName.APP_TRACKER);
+    }
+
+    public void onStart() {
+        super.onStart();
+        //Get an Analytics tracker to report app starts and uncaught exceptions etc.
+        //GoogleAnalytics.getInstance(this).reportActivityStart(this);
+        GoogleAnalytics.getInstance(this).newTracker(PROPERTY_ID).setScreenName("EXAM");
+
+    }
+
+    public void onStop(){
+        //Get an Analytics tracker to report app starts and uncaught exceptions etc.
+        GoogleAnalytics.getInstance(this).reportActivityStop(this);
+        super.onStop();
+
+    }
+    void startQuiz(){
+
+        //Intent mainIntent = new Intent(SplashScreen.this, MainActivity.class);
+        Intent mainIntent = new Intent(SplashScreen.this, Quiz_Choice.class);
         SplashScreen.this.startActivity(mainIntent);
         SplashScreen.this.finish();
     }
@@ -62,4 +88,5 @@ public class SplashScreen extends Activity {
 		int id = item.getItemId();
         return id == R.id.action_settings || super.onOptionsItemSelected(item);
     }
+
 }

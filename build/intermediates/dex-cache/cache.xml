@@ -1,26 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--suppress XmlUnboundNsPrefix -->
 <items version="2" >
 
     <item
-        jar="/home/djwalshy/363Quiz/363Quiz/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.2/classes.jar"
+        jar="/home/djwalshy/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.3/support-annotations-21.0.3.jar"
         jumboMode="false"
         revision="20.0.0"
-        sha1="d1bf02de1c56d942e7a9d093b8610ba1ef4128e3">
-        <dex dex="/home/djwalshy/363Quiz/363Quiz/app/build/intermediates/pre-dexed/debug/classes-40ab0cdc740baf4a76efffa666b27915001c3188.jar" />
+        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
+        <dex dex="/home/djwalshy/363Quiz/363Quiz/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-33db396d7fe106076a3af5214aeb97c477e9c092.jar" />
     </item>
     <item
-        jar="/home/djwalshy/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.2/support-annotations-21.0.2.jar"
+        jar="/home/djwalshy/363Quiz/363Quiz/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/classes.jar"
         jumboMode="false"
         revision="20.0.0"
-        sha1="99373741f99a0556ee293c41e8faa1ca3ae8a4e6">
-        <dex dex="/home/djwalshy/363Quiz/363Quiz/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.2-32c02647144d9f0bffa8efbab3c7111c61956e44.jar" />
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="/home/djwalshy/363Quiz/363Quiz/app/build/intermediates/pre-dexed/debug/classes-5bb50f960c87bc0b2052688665e8bd96a7cbb485.jar" />
     </item>
     <item
-        jar="/home/djwalshy/363Quiz/363Quiz/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.2/libs/internal_impl-21.0.2.jar"
+        jar="/home/djwalshy/363Quiz/363Quiz/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/classes.jar"
         jumboMode="false"
         revision="20.0.0"
-        sha1="962e8b12569c56dbdcf8367eb4eac8bb129cd18f">
-        <dex dex="/home/djwalshy/363Quiz/363Quiz/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.2-752575897f23e2e1299cad6fe06b13ecae5b3fb6.jar" />
+        sha1="dd9247ea0fabe8ee479638c4b4a23e93752be256">
+        <dex dex="/home/djwalshy/363Quiz/363Quiz/app/build/intermediates/pre-dexed/debug/classes-9ee845dffd79428a6e937c5b0f57aea84af45787.jar" />
+    </item>
+    <item
+        jar="/home/djwalshy/363Quiz/363Quiz/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/libs/internal_impl-21.0.3.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="/home/djwalshy/363Quiz/363Quiz/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-5a96a5f3c778386cd9fa61e575adae44fb4b054f.jar" />
     </item>
 
 </items>

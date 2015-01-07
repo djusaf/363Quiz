@@ -22,16 +22,30 @@ public class GradeActivity extends Activity {
 		b1.setOnClickListener(new View.OnClickListener() {
 		    @Override
 		    public void onClick(View v) {
-		        Intent intent = new Intent(GradeActivity.this, MainActivity.class);
+                MainActivity.numberOfQuestions = 0;
+                MainActivity.bolRandom = false;
+                MainActivity.Chapter1 = false;
+                MainActivity.Chapter2 = false;
+                MainActivity.Chapter3 = false;
+                MainActivity.Chapter4 = false;
+                MainActivity.Chapter5 = false;
+                MainActivity.Chapter6 = false;
+                MainActivity.Chapter7 = false;
+                MainActivity.Chapter8 = false;
+                MainActivity.Chapter9 = false;
+                MainActivity.Chapter10 = false;
+                MainActivity.Chapter11 = false;
+
+		        Intent intent = new Intent(GradeActivity.this, Quiz_Choice.class);
 		        startActivity(intent);
 		    }
 		});
 		//get score
 		Bundle b = getIntent().getExtras();
 		int score= b.getInt("score");
-		int score2 = score * 5;
+		int score2 = (score / MainActivity.numberOfQuestions) * 100;
 		//display score
-		t.setText("You answered " +(score) +" of 20 questions correctly and scored:");
+		t.setText("You answered " +(score) +" of " + MainActivity.numberOfQuestions + " questions correctly and scored:");
 		t1.setText(String.valueOf(score2) + "%");
 			    
 	}

@@ -4,7 +4,7 @@
     android:layout_height="match_parent" >
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:layout_marginLeft="15dp"
     android:layout_marginRight="15dp"
     android:orientation="vertical" >
@@ -24,7 +24,7 @@
         android:gravity="center_horizontal"
         android:text="@string/splash_screen_help"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:textSize="25dp" />
+        android:textSize="25sp" />
 
     <TextView
         android:id="@+id/textView2"
@@ -33,7 +33,7 @@
         android:layout_marginTop="20dp"
         android:gravity="center_horizontal"
         android:text="@string/splash_screen2"
-        android:textSize="20dp" />
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/textView"
@@ -42,13 +42,13 @@
         android:layout_marginTop="20dp"
         android:gravity="center_horizontal"
         android:text="@string/splash_screen_footer"
-        android:textSize="15dp"
+        android:textSize="15sp"
         android:layout_gravity="center_horizontal" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Start Exam"
+        android:text="@string/startExam"
         android:id="@+id/button" />
 
 </LinearLayout>

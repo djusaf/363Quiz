@@ -47,7 +47,8 @@ class DbHelper extends SQLiteOpenHelper {
 	private static final String KEY_OPTC= "optc"; //option c
 	private static final String KEY_OPTD= "optd"; //option d
 	private SQLiteDatabase dbase;
-	public DbHelper(Context context) {
+
+    public DbHelper(Context context) {
 		super(context, DATABASE_NAME, null, DATABASE_VERSION);
 	}
 
@@ -594,16 +595,303 @@ class DbHelper extends SQLiteOpenHelper {
 		}
 		return quesList;
 	}
-	
-// --Commented out by Inspection START (12/3/2014 4:00 PM):
-//	public int rowcount()
-//	{
-//		int row;
-//		String selectQuery = "SELECT  * FROM " + TABLE_NAME;
-//		SQLiteDatabase db = this.getWritableDatabase();
-//		Cursor cursor = db.rawQuery(selectQuery, null);
-//		row=cursor.getCount();
-//		return row;
-//	}
-// --Commented out by Inspection STOP (12/3/2014 4:00 PM)
+
+    public List<Question> getChapterOneQuestions() {
+        List<Question> quesList = new ArrayList<Question>();
+        @SuppressWarnings("MismatchedQueryAndUpdateOfCollection") List<Question> ReviewList = new ArrayList<Question>();
+        // Select All Query
+        //String selectQuery2 = "SELECT DISTINCT * FROM " + TABLE_NAME + " ORDER BY RANDOM() LIMIT 20";
+        String selectQuery3 = "SELECT DISTINCT * FROM " + TABLE_NAME + " LIMIT 4"; //Chapter 1 is questions 1-4
+        dbase=this.getReadableDatabase();
+        Cursor cursor = dbase.rawQuery(selectQuery3, null);
+        // looping through all rows and adding to list
+
+        if (cursor.moveToFirst()) {
+            do {
+                Question quest = new Question();
+                quest.setID(cursor.getInt(0));
+                quest.setQUESTION(cursor.getString(1));
+                quest.setANSWER(cursor.getString(2));
+                quest.setOPTA(cursor.getString(3));
+                quest.setOPTB(cursor.getString(4));
+                quest.setOPTC(cursor.getString(5));
+                quest.setOPTD(cursor.getString(6));
+                quest.setREFERENCE(cursor.getString(7));
+                quesList.add(quest);
+                //Load List for Review
+                ReviewList.add(quest);
+            } while (cursor.moveToNext());
+        }
+        return quesList;
+    }
+
+    public List<Question> getChapterTwoQuestions() {
+        List<Question> quesList = new ArrayList<Question>();
+        @SuppressWarnings("MismatchedQueryAndUpdateOfCollection") List<Question> ReviewList = new ArrayList<Question>();
+        String selectQuery4 = "SELECT DISTINCT * FROM " + TABLE_NAME + " LIMIT 20 OFFSET 4"; //Chapter 2 is questions 5-43
+        dbase=this.getReadableDatabase();
+        Cursor cursor = dbase.rawQuery(selectQuery4, null);
+        // looping through all rows and adding to list
+
+        if (cursor.moveToFirst()) {
+            do {
+                Question quest = new Question();
+                quest.setID(cursor.getInt(0));
+                quest.setQUESTION(cursor.getString(1));
+                quest.setANSWER(cursor.getString(2));
+                quest.setOPTA(cursor.getString(3));
+                quest.setOPTB(cursor.getString(4));
+                quest.setOPTC(cursor.getString(5));
+                quest.setOPTD(cursor.getString(6));
+                quest.setREFERENCE(cursor.getString(7));
+                quesList.add(quest);
+                //Load List for Review
+                ReviewList.add(quest);
+            } while (cursor.moveToNext());
+        }
+        return quesList;
+    }
+
+    public List<Question> getChapterThreeQuestions() {
+        List<Question> quesList = new ArrayList<Question>();
+        @SuppressWarnings("MismatchedQueryAndUpdateOfCollection") List<Question> ReviewList = new ArrayList<Question>();
+        String selectQuery5 = "SELECT DISTINCT * FROM " + TABLE_NAME + " LIMIT 20 OFFSET 43"; //Chapter 2 is questions 44-80
+        dbase=this.getReadableDatabase();
+        Cursor cursor = dbase.rawQuery(selectQuery5, null);
+        // looping through all rows and adding to list
+
+        if (cursor.moveToFirst()) {
+            do {
+                Question quest = new Question();
+                quest.setID(cursor.getInt(0));
+                quest.setQUESTION(cursor.getString(1));
+                quest.setANSWER(cursor.getString(2));
+                quest.setOPTA(cursor.getString(3));
+                quest.setOPTB(cursor.getString(4));
+                quest.setOPTC(cursor.getString(5));
+                quest.setOPTD(cursor.getString(6));
+                quest.setREFERENCE(cursor.getString(7));
+                quesList.add(quest);
+                //Load List for Review
+                ReviewList.add(quest);
+            } while (cursor.moveToNext());
+        }
+        return quesList;
+    }
+
+    public List<Question> getChapterFourQuestions() {
+        List<Question> quesList = new ArrayList<Question>();
+        @SuppressWarnings("MismatchedQueryAndUpdateOfCollection") List<Question> ReviewList = new ArrayList<Question>();
+        String selectQuery6 = "SELECT DISTINCT * FROM " + TABLE_NAME + " LIMIT 20 OFFSET 80"; //Chapter 4 is questions 81-145
+        dbase=this.getReadableDatabase();
+        Cursor cursor = dbase.rawQuery(selectQuery6, null);
+        // looping through all rows and adding to list
+
+        if (cursor.moveToFirst()) {
+            do {
+                Question quest = new Question();
+                quest.setID(cursor.getInt(0));
+                quest.setQUESTION(cursor.getString(1));
+                quest.setANSWER(cursor.getString(2));
+                quest.setOPTA(cursor.getString(3));
+                quest.setOPTB(cursor.getString(4));
+                quest.setOPTC(cursor.getString(5));
+                quest.setOPTD(cursor.getString(6));
+                quest.setREFERENCE(cursor.getString(7));
+                quesList.add(quest);
+                //Load List for Review
+                ReviewList.add(quest);
+            } while (cursor.moveToNext());
+        }
+        return quesList;
+    }
+
+    public List<Question> getChapterFiveQuestions() {
+        List<Question> quesList = new ArrayList<Question>();
+        @SuppressWarnings("MismatchedQueryAndUpdateOfCollection") List<Question> ReviewList = new ArrayList<Question>();
+        String selectQuery7 = "SELECT DISTINCT * FROM " + TABLE_NAME + " LIMIT 20 OFFSET 145"; //Chapter 5 is questions 146-159
+        dbase=this.getReadableDatabase();
+        Cursor cursor = dbase.rawQuery(selectQuery7, null);
+        // looping through all rows and adding to list
+
+        if (cursor.moveToFirst()) {
+            do {
+                Question quest = new Question();
+                quest.setID(cursor.getInt(0));
+                quest.setQUESTION(cursor.getString(1));
+                quest.setANSWER(cursor.getString(2));
+                quest.setOPTA(cursor.getString(3));
+                quest.setOPTB(cursor.getString(4));
+                quest.setOPTC(cursor.getString(5));
+                quest.setOPTD(cursor.getString(6));
+                quest.setREFERENCE(cursor.getString(7));
+                quesList.add(quest);
+                //Load List for Review
+                ReviewList.add(quest);
+            } while (cursor.moveToNext());
+        }
+        return quesList;
+    }
+
+    public List<Question> getChapterSixQuestions() {
+        List<Question> quesList = new ArrayList<Question>();
+        @SuppressWarnings("MismatchedQueryAndUpdateOfCollection") List<Question> ReviewList = new ArrayList<Question>();
+        String selectQuery6 = "SELECT DISTINCT * FROM " + TABLE_NAME + " LIMIT 8 OFFSET 159"; //Chapter 6 is questions 160-168
+        dbase=this.getReadableDatabase();
+        Cursor cursor = dbase.rawQuery(selectQuery6, null);
+        // looping through all rows and adding to list
+
+        if (cursor.moveToFirst()) {
+            do {
+                Question quest = new Question();
+                quest.setID(cursor.getInt(0));
+                quest.setQUESTION(cursor.getString(1));
+                quest.setANSWER(cursor.getString(2));
+                quest.setOPTA(cursor.getString(3));
+                quest.setOPTB(cursor.getString(4));
+                quest.setOPTC(cursor.getString(5));
+                quest.setOPTD(cursor.getString(6));
+                quest.setREFERENCE(cursor.getString(7));
+                quesList.add(quest);
+                //Load List for Review
+                ReviewList.add(quest);
+            } while (cursor.moveToNext());
+        }
+        return quesList;
+    }
+
+    public List<Question> getChapterSevenQuestions() {
+        List<Question> quesList = new ArrayList<Question>();
+        @SuppressWarnings("MismatchedQueryAndUpdateOfCollection") List<Question> ReviewList = new ArrayList<Question>();
+        String selectQuery7 = "SELECT DISTINCT * FROM " + TABLE_NAME + " LIMIT 15 OFFSET 168"; //Chapter 7 is questions 169-184
+        dbase=this.getReadableDatabase();
+        Cursor cursor = dbase.rawQuery(selectQuery7, null);
+        // looping through all rows and adding to list
+
+        if (cursor.moveToFirst()) {
+            do {
+                Question quest = new Question();
+                quest.setID(cursor.getInt(0));
+                quest.setQUESTION(cursor.getString(1));
+                quest.setANSWER(cursor.getString(2));
+                quest.setOPTA(cursor.getString(3));
+                quest.setOPTB(cursor.getString(4));
+                quest.setOPTC(cursor.getString(5));
+                quest.setOPTD(cursor.getString(6));
+                quest.setREFERENCE(cursor.getString(7));
+                quesList.add(quest);
+                //Load List for Review
+                ReviewList.add(quest);
+            } while (cursor.moveToNext());
+        }
+        return quesList;
+    }
+
+    public List<Question> getChapterEightQuestions() {
+        List<Question> quesList = new ArrayList<Question>();
+        @SuppressWarnings("MismatchedQueryAndUpdateOfCollection") List<Question> ReviewList = new ArrayList<Question>();
+        String selectQuery8 = "SELECT DISTINCT * FROM " + TABLE_NAME + " LIMIT 12 OFFSET 184"; //Chapter 8 is questions 185-197
+        dbase=this.getReadableDatabase();
+        Cursor cursor = dbase.rawQuery(selectQuery8, null);
+        // looping through all rows and adding to list
+
+        if (cursor.moveToFirst()) {
+            do {
+                Question quest = new Question();
+                quest.setID(cursor.getInt(0));
+                quest.setQUESTION(cursor.getString(1));
+                quest.setANSWER(cursor.getString(2));
+                quest.setOPTA(cursor.getString(3));
+                quest.setOPTB(cursor.getString(4));
+                quest.setOPTC(cursor.getString(5));
+                quest.setOPTD(cursor.getString(6));
+                quest.setREFERENCE(cursor.getString(7));
+                quesList.add(quest);
+                //Load List for Review
+                ReviewList.add(quest);
+            } while (cursor.moveToNext());
+        }
+        return quesList;
+    }
+
+    public List<Question> getChapterNineQuestions() {
+        List<Question> quesList = new ArrayList<Question>();
+        @SuppressWarnings("MismatchedQueryAndUpdateOfCollection") List<Question> ReviewList = new ArrayList<Question>();
+        String selectQuery9 = "SELECT DISTINCT * FROM " + TABLE_NAME + " LIMIT 11 OFFSET 197"; //Chapter 9 is questions 198-209
+        dbase=this.getReadableDatabase();
+        Cursor cursor = dbase.rawQuery(selectQuery9, null);
+        // looping through all rows and adding to list
+
+        if (cursor.moveToFirst()) {
+            do {
+                Question quest = new Question();
+                quest.setID(cursor.getInt(0));
+                quest.setQUESTION(cursor.getString(1));
+                quest.setANSWER(cursor.getString(2));
+                quest.setOPTA(cursor.getString(3));
+                quest.setOPTB(cursor.getString(4));
+                quest.setOPTC(cursor.getString(5));
+                quest.setOPTD(cursor.getString(6));
+                quest.setREFERENCE(cursor.getString(7));
+                quesList.add(quest);
+                //Load List for Review
+                ReviewList.add(quest);
+            } while (cursor.moveToNext());
+        }
+        return quesList;
+    }
+
+    public List<Question> getChapterTenQuestions() {
+        List<Question> quesList = new ArrayList<Question>();
+        @SuppressWarnings("MismatchedQueryAndUpdateOfCollection") List<Question> ReviewList = new ArrayList<Question>();
+        String selectQuery10 = "SELECT DISTINCT * FROM " + TABLE_NAME + " LIMIT 4 OFFSET 209"; //Chapter 10 is questions 210-214
+        dbase=this.getReadableDatabase();
+        Cursor cursor = dbase.rawQuery(selectQuery10, null);
+        // looping through all rows and adding to list
+
+        if (cursor.moveToFirst()) {
+            do {
+                Question quest = new Question();
+                quest.setID(cursor.getInt(0));
+                quest.setQUESTION(cursor.getString(1));
+                quest.setANSWER(cursor.getString(2));
+                quest.setOPTA(cursor.getString(3));
+                quest.setOPTB(cursor.getString(4));
+                quest.setOPTC(cursor.getString(5));
+                quest.setOPTD(cursor.getString(6));
+                quest.setREFERENCE(cursor.getString(7));
+                quesList.add(quest);
+                //Load List for Review
+                ReviewList.add(quest);
+            } while (cursor.moveToNext());
+        }
+        return quesList;
+    }
+
+    public List<Question> getChapterElevenQuestions() {
+        List<Question> quesList = new ArrayList<Question>();
+        @SuppressWarnings("MismatchedQueryAndUpdateOfCollection") List<Question> ReviewList = new ArrayList<Question>();
+        String selectQuery11 = "SELECT DISTINCT * FROM " + TABLE_NAME + " LIMIT 4 OFFSET 214"; //Chapter 11 is questions 215-218
+        dbase=this.getReadableDatabase();
+        Cursor cursor = dbase.rawQuery(selectQuery11, null);
+        // looping through all rows and adding to list
+
+        if (cursor.moveToFirst()) {
+            do {
+                Question quest = new Question();
+                quest.setID(cursor.getInt(0));
+                quest.setQUESTION(cursor.getString(1));
+                quest.setANSWER(cursor.getString(2));
+                quest.setOPTA(cursor.getString(3));
+                quest.setOPTB(cursor.getString(4));
+                quest.setOPTC(cursor.getString(5));
+                quest.setOPTD(cursor.getString(6));
+                quest.setREFERENCE(cursor.getString(7));
+                quesList.add(quest);
+                //Load List for Review
+                ReviewList.add(quest);
+            } while (cursor.moveToNext());
+        }
+        return quesList;
+    }
 }
