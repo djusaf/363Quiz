@@ -1,34 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--suppress XmlUnboundNsPrefix -->
 <items version="2" >
 
     <item
-        jar="/home/djwalshy/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.3/support-annotations-21.0.3.jar"
-        jumboMode="false"
-        revision="20.0.0"
-        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
-        <dex dex="/home/djwalshy/363Quiz/363Quiz/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-33db396d7fe106076a3af5214aeb97c477e9c092.jar" />
-    </item>
-    <item
-        jar="/home/djwalshy/363Quiz/363Quiz/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/classes.jar"
-        jumboMode="false"
-        revision="20.0.0"
-        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
-        <dex dex="/home/djwalshy/363Quiz/363Quiz/app/build/intermediates/pre-dexed/debug/classes-5bb50f960c87bc0b2052688665e8bd96a7cbb485.jar" />
-    </item>
-    <item
-        jar="/home/djwalshy/363Quiz/363Quiz/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/classes.jar"
+        jar="C:\Users\Bryan\AndroidStudioProjects\363Quiz\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.5.87\classes.jar"
         jumboMode="false"
         revision="20.0.0"
         sha1="dd9247ea0fabe8ee479638c4b4a23e93752be256">
-        <dex dex="/home/djwalshy/363Quiz/363Quiz/app/build/intermediates/pre-dexed/debug/classes-9ee845dffd79428a6e937c5b0f57aea84af45787.jar" />
+        <dex dex="C:\Users\Bryan\AndroidStudioProjects\363Quiz\app\build\intermediates\pre-dexed\debug\classes-e4b2ac823f059b70660c07180a403931c3b54e25.jar" />
     </item>
     <item
-        jar="/home/djwalshy/363Quiz/363Quiz/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/libs/internal_impl-21.0.3.jar"
+        jar="C:\Users\Bryan\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\21.0.3\support-annotations-21.0.3.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
+        <dex dex="C:\Users\Bryan\AndroidStudioProjects\363Quiz\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.3-25889ea9a72a356b907343669623a378566be207.jar" />
+    </item>
+    <item
+        jar="C:\Users\Bryan\AndroidStudioProjects\363Quiz\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\libs\internal_impl-21.0.3.jar"
         jumboMode="false"
         revision="20.0.0"
         sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
-        <dex dex="/home/djwalshy/363Quiz/363Quiz/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-5a96a5f3c778386cd9fa61e575adae44fb4b054f.jar" />
+        <dex dex="C:\Users\Bryan\AndroidStudioProjects\363Quiz\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.3-baffb88c2dc1afea1fa13feaa1ff70ca507d32ab.jar" />
+    </item>
+    <item
+        jar="C:\Users\Bryan\AndroidStudioProjects\363Quiz\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="C:\Users\Bryan\AndroidStudioProjects\363Quiz\app\build\intermediates\pre-dexed\debug\classes-2a522fcd642205931f3fb9ea1c063c4ef432932a.jar" />
     </item>
 
 </items>

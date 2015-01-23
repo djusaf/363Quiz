@@ -4,11 +4,16 @@ import com.military.quizthirtysixthree.R;
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
+import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+
+
 public class GradeActivity extends Activity {
+    public String TAG;
+    private int numberofQuestions;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -41,9 +46,10 @@ public class GradeActivity extends Activity {
 		    }
 		});
 		//get score
+
 		Bundle b = getIntent().getExtras();
 		int score= b.getInt("score");
-		int score2 = (score / MainActivity.numberOfQuestions) * 100;
+        int score2 = ((int)score * 100)/ MainActivity.numberOfQuestions;
 		//display score
 		t.setText("You answered " +(score) +" of " + MainActivity.numberOfQuestions + " questions correctly and scored:");
 		t1.setText(String.valueOf(score2) + "%");

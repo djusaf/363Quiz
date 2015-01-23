@@ -53,7 +53,7 @@ public class MainActivity extends Activity {
     private List<Question> Chapter11List;
     private List<Question> Chapter12List;
 
-	private int score=0;
+	public int score=0;
     private int qid=0;
 	private Question currentQ;
     private TextView txtQNumber;
