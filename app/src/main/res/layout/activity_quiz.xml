@@ -1,7 +1,8 @@
 <ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@android:color/background_dark">
 <LinearLayout
        android:id="@+id/LinearLayout1"
     android:layout_width="match_parent"
@@ -16,7 +17,8 @@
         android:id="@+id/txtQNumber"
         android:gravity="end"
         android:layout_gravity="end"
-        android:textSize="15sp" />
+        android:textSize="15sp"
+        android:textColor="@android:color/background_light" />
 
     <TextView
         android:id="@+id/textView1"
@@ -27,7 +29,8 @@
         android:gravity="center_horizontal"
         android:text="@string/Question"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textSize="25sp" />
+        android:textSize="25sp"
+        android:textColor="@android:color/background_light" />
 
     <RadioGroup
         android:id="@+id/radioGroup1"
@@ -44,28 +47,32 @@
             android:layout_height="wrap_content"
             android:checked="true"
             android:text="@string/Radio0"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:textColor="@android:color/background_light" />
 
         <RadioButton
             android:id="@+id/radio1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/Radio1"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:textColor="@android:color/background_light" />
 
         <RadioButton
             android:id="@+id/radio2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/Radio2"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:textColor="@android:color/background_light" />
 
         <RadioButton
             android:id="@+id/radio3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/Radio3"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:textColor="@android:color/background_light" />
 
             </RadioGroup>
 
@@ -77,7 +84,7 @@
         android:layout_marginRight="15dp"
         android:gravity="center_horizontal"
         android:text="@string/Reference"
-        android:textColor="?android:attr/textColorPrimary"
+        android:textColor="@android:color/background_light"
         android:textSize="20sp" />
 
     <Button
@@ -85,6 +92,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/str_next"
-        android:gravity="center"/>
+        android:gravity="center"
+        android:background="@drawable/button_quiz" />
 </LinearLayout>
     </ScrollView>

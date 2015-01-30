@@ -20,9 +20,9 @@
     <string name="action_settings">Settings</string>
     <string name="splash_screen2">The practice exam consists of 20 questions randomly generated from a pool over 300 questions on regulation 36–3.</string>
     <string name="splash_screen_footer">This app is not endorsed by the USAF, BMT, or the 737TRG.  It is independently developed and maintained by a third party.</string>
-    <string name="menu_bug_report">Bug Report</string>>
-    <string name="title_activity_quiz__choice">Quiz_Choice</string>
-    <string name="choice">Choose which exam you would like to take</string>
+    <string name="menu_bug_report">Bug Report</string>
+>    <string name="title_activity_quiz__choice">Quiz Choice</string>
+    <string name="choice">737TRG OI 36–3 EXAMS</string>
     <string name="startExam">Choose Exam</string>
     <string name="questionNumber">Question Number</string>
     <string name="random">Random 20 Questions</string>
@@ -37,4 +37,10 @@
     <string name="chapter9">Chapter9</string>
     <string name="chapter10">Chapter10</string>
     <string name="chapter11">Chapter11</string>
+    <string name="exam_choice_one">737TRG OI 36–3</string>
+    <string name="exam_choice_two">AETCI 36–03 (Coming Soon)</string>
+    <string name="exam_choice_three">737TRG 36–2905 (Coming Soon)</string>
+    <string name="exam_choice_four">737TRG OI 48–150 (Coming Soon)</string>
+    <string name="exam_choice_five">Weekly Assigned Checklist (Coming Soon)</string>
+    <string name="exam_choice_title">CHOOSE EXAM</string>
 </resources>

@@ -68,7 +68,7 @@ public class SplashScreen extends Activity {
     void startQuiz(){
 
         //Intent mainIntent = new Intent(SplashScreen.this, MainActivity.class);
-        Intent mainIntent = new Intent(SplashScreen.this, Quiz_Choice.class);
+        Intent mainIntent = new Intent(SplashScreen.this, ChoiceActivity.class);
         SplashScreen.this.startActivity(mainIntent);
         SplashScreen.this.finish();
     }

@@ -1,0 +1,79 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.military.quizthirtysixthree.ChoiceActivity"
+    android:foregroundGravity="fill_horizontal|fill_vertical"
+    android:background="@android:color/black">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        tools:ignore="UselessParent"
+        android:background="@android:color/background_dark">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/exam_choice_title"
+            android:id="@+id/textView3"
+            android:textAlignment="center"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@android:color/background_light" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/exam_choice_one"
+            android:id="@+id/btn363"
+            android:background="@drawable/button_enabled"
+            android:layout_marginBottom="10dp"
+            android:textColor="@android:color/background_light" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/exam_choice_two"
+            android:id="@+id/btn3603"
+            android:background="@drawable/button_enabled"
+            android:layout_marginBottom="10dp"
+            android:textColor="@android:color/background_light" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/exam_choice_three"
+            android:id="@+id/btn2905"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/button_enabled"
+            android:layout_marginBottom="10dp"
+            android:textColor="@android:color/background_light" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/exam_choice_four"
+            android:id="@+id/btn48150"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/button_enabled"
+            android:layout_marginBottom="10dp"
+            android:textColor="@android:color/background_light" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/exam_choice_five"
+            android:id="@+id/btnWAC"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/button_enabled"
+            android:textColor="@android:color/background_light" />
+
+    </LinearLayout>
+
+</FrameLayout>

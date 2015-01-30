@@ -32,7 +32,7 @@ class DbHelper extends SQLiteOpenHelper {
 	// --Commented out by Inspection (12/3/2014 3:59 PM):Question currentQ;
 	// --Commented out by Inspection (12/3/2014 4:00 PM):int qid=0;
 	
-	private static final int DATABASE_VERSION = 15; //Update number to call onUpgrade method
+	private static final int DATABASE_VERSION = 16; //Update number to call onUpgrade method
 	// Database Name
 	private static final String DATABASE_NAME = "thirtysixthree";
 	// tasks table name
@@ -108,7 +108,7 @@ class DbHelper extends SQLiteOpenHelper {
         this.addQuestion(q17);
         Question q18 = new Question("Trainee position badges are worn in ABU's and which of the following uniforms?", "PT Gear", "Blues Service Uniform", "Blues Full Service Dress", "None of the above", "None of the above", "Para 2.3.5");//D
         this.addQuestion(q18);
-        Question q19 = new Question("Trainee wear canteens during all outside activities except:", "Flight Drill", "Negotiating obstacles at the BMT Obstacle Course", "PT", "All of the above", "All of the Above", "Para 2.4.1");//D
+        Question q19 = new Question("Trainee wear canteens during all outside activities except:", "Flight Drill", "Negotiating obstacles at the BMT Obstacle Course", "PT", "All of the above", "All of the above", "Para 2.4.1");//D
         this.addQuestion(q19);
         Question q20 = new Question("Canteens are sanitized how often?", "Daily", "Weekly", "Monthly", "Bi-Monthly", "Weekly", "Para 2.4.2");//B
         this.addQuestion(q20);
@@ -234,7 +234,7 @@ class DbHelper extends SQLiteOpenHelper {
         Question q80 = new Question("AF Form 490 is issued by __________ and provides information for mandatory medical appointments.", "MTI", "Medical Staff", "Flight Commander", "Civilian", "Medical Staff", "Para 3.11.8.1");//B
         this.addQuestion(q80);
         //Chapter 4
-        Question q81 = new Question("Line MTI's will ensure flight accountability ______________.", "at the beginning of each shift", "at the end of each shift", "at all times", "every hour", "at the end of each shift", "Para 4.1.1.");//C
+        Question q81 = new Question("Line MTI's will ensure flight accountability ______________.", "at the beginning of each shift", "at the end of each shift", "at all times", "every hour", "at all times", "Para 4.1.1.");//C
         this.addQuestion(q81);
         Question q82 = new Question("Student leaders are authorized to carry rosters that do not contain ___________.", "Personally Identifiable Information", "First Names", "Last Names", "Middle Names", "Personally Identifiable Information", "Para 4.1.1. NOTE");//A
         this.addQuestion(q82);
@@ -367,7 +367,7 @@ class DbHelper extends SQLiteOpenHelper {
         //Chapter 5
         Question q146 = new Question("(M16 Trainer Weapons) Each squadron will conduct an accountability check NET 1600 and BLT 2000; who is responsible for reporting their accountability to the CQ?", "Entry Controller", "Weapons Monitor", "Dorm Chief", "Flight Instructor", "Flight Instructor", "Para. 5.2.4.1");//D
         this.addQuestion(q146);
-        Question q147 = new Question("(RH&T M16 Daily Storage) When stored in the carrying case under the bed, which of the following is NOT the approved method of display?", "Muzzle of the rifle is towards the center isle", "Muzzle of the rifle is towards the wall locker", "Carrying handle will be towards the non-inspection side", "pistol grip towards the non-inspection side", "Muzzle of the rifle is towards the center isle", "Para. 5.2.5.2.1");//A
+        Question q147 = new Question("(RH&T M16 Daily Storage) When stored in the carrying case under the bed, which of the following is the correct method of display?", "Muzzle of the rifle is towards the center isle", "Muzzle of the rifle is towards the wall locker", "Carrying handle will be towards the non-inspection side", "pistol grip towards the non-inspection side", "Muzzle of the rifle is towards the center isle", "Para. 5.2.5.2.1");//A
         this.addQuestion(q147);
         Question q148 = new Question("(Clearing Barrel Area) A clear zone must be established around each Clearing Barrel:  ____ feet on each side and _____ feet in the front and outlined in _______.", "3 / 6 / Yellow", "3 / 6 / Red", "6 / 3 / Yellow", "6 / 3 / Red", "3 / 6 / Red", "Para. 5.3.1");//B
         this.addQuestion(q148);
@@ -448,7 +448,7 @@ class DbHelper extends SQLiteOpenHelper {
         //Chapter 8
         Question q185 = new Question("100% of trainees must accomplish Mandatory Drug Testing within __ hours of initial arrival to BMT.", "24", "48", "72", "96", "72", "Para. 8.1");//C
         this.addQuestion(q185);
-        Question q186 = new Question("MTI will wear _______ when taking a flight to Drug Testing.", "Duty Uniform", "MTI PT Gear", "Blues", "AF PT Gear", "", "Para. 8.1.2");//A
+        Question q186 = new Question("MTI will wear _______ when taking a flight to Drug Testing.", "Duty Uniform", "MTI PT Gear", "Blues", "AF PT Gear", "Duty Uniform", "Para. 8.1.2");//A
         this.addQuestion(q186);
         Question q187 = new Question("What two items must a trainee have with them prior to being allowed to provide a urine sample for drug testing?", "A picture and SSN card only", "Only a SSN card is required", "Photo ID and SSN proof", "Photo ID and Bank Info", "Photo ID and SSN proof", "Para. 8.1.3.1");//C
         this.addQuestion(q187);
@@ -468,7 +468,7 @@ class DbHelper extends SQLiteOpenHelper {
         this.addQuestion(q194);
         Question q195 = new Question("If an MTI identifies a trainee as having a potential mental/behavioral problem, what is required on White Bond paper when the trainee is sent to a medical facility?", "BMT105A", "4 AFQT scores and a statement", "Witness statements", "AFSC", "4 AFQT scores and a statement", "Para. 8.8.2");//B
         this.addQuestion(q195);
-        Question q196 = new Question("If a trainee requests a mental health evaluation, what is NOT required?", "Boxer Rights", "2 Escorts", "I.S. Counseling", "Supporting Documention", "Boxer Rights", "Para. 8.8.1.3");//D
+        Question q196 = new Question("If a trainee requests a mental health evaluation, what is NOT required?", "Boxer Rights", "2 Escorts", "I.S. Counseling", "Supporting Documentation", "Boxer Rights", "Para. 8.8.13");//D
         this.addQuestion(q196);
         Question q197 = new Question("Which medication may trainees continue to consume that was issued from a civilian provider prior to them arriving at BMT?", "Any Medication", "Dietary Supplements", "Pain Killers", "Birth Control", "Birth Control", "Para. 8.10.1");//D
         this.addQuestion(q197);
@@ -481,7 +481,7 @@ class DbHelper extends SQLiteOpenHelper {
         this.addQuestion(q200);
         Question q201 = new Question("If a trainee is admitted for longer than ___ hours, their property must be inventoried and kept in PT/Supply.", "24", "48", "72", "96", "72", "Para. 9.2.1");//C
         this.addQuestion(q201);
-        Question q202 = new Question("Trainees granted convalescence leave must depart on leave and return from leave to which squadron?", "Assigned Squadron", "737TRSS", "Old Flight Squadron", "New Flight Squadron", "737TRSS", "Para. 9.3.1.1.");//B
+        Question q202 = new Question("Trainees granted convalescence leave must depart on leave and return from leave to which squadron?", "Assigned Squadron", "324TRS", "Old Flight Squadron", "New Flight Squadron", "324TRS", "Para. 9.3.1.1.");//B
         this.addQuestion(q202);
         Question q203 = new Question("Ensure that trainees receive one set of _______ to wear when traveling on leave.", "Civilian clothes", "ABU's", "PT Gear", "blues", "blues", "Para. 9.3.1.4");//D
         this.addQuestion(q203);

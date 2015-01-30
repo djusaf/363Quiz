@@ -37,6 +37,7 @@ import com.google.android.gms.analytics.Tracker;
  * Creates UI and contains all information for each iteration of the exam
  */
 
+@SuppressWarnings("WeakerAccess")
 public class MainActivity extends Activity {
 
     private List<Question> quesList;
@@ -51,9 +52,8 @@ public class MainActivity extends Activity {
     private List<Question> Chapter9List;
     private List<Question> Chapter10List;
     private List<Question> Chapter11List;
-    private List<Question> Chapter12List;
 
-	public int score=0;
+    public int score=0;
     private int qid=0;
 	private Question currentQ;
     private TextView txtQNumber;
@@ -75,13 +75,7 @@ public class MainActivity extends Activity {
     public static boolean Chapter9 = false;
     public static boolean Chapter10 = false;
     public static boolean Chapter11 = false;
-    public static boolean Chapter12 = false;
-    public static boolean Chapter13 = false;
-    public static boolean Chapter14 = false;
-    public static boolean Chapter15 = false;
-    public static boolean Chapter16 = false;
-    public static boolean Chapter17 = false;
-    public static int numberOfQuestions;
+    public static int numberOfQuestions = 0;
     private final SplashScreen test = new SplashScreen();
     /**
      *
